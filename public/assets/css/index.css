@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --primary-color: #0088d2;
+    --second-color: #04a1f5;
+    --white: #fff;
+}
+
+.mt {
+    margin-top: 18px;
+}
+
+.mt2 {
+    margin-top: 10px;
+}
+
+.ml {
+    margin-left: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(120deg, #dbefff, #50738e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background 0.5s;
+}
+
+/*index page*/
+
+#cadastro {
+    display: none;
+}
+
+#login-container {
+    min-height: 720px;
+    width: 390px;
+    background: aliceblue;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.5s;
+}
+
+#cadastro-container {
+    min-height: 720px;
+    width: 390px;
+    background: aliceblue;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.5s;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dbefff;
+    position: absolute;
+    top: 12.5%;
+    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icon:hover {
+    padding: 1px;
+    transition: all 0.5s;
+}
+
+.icon::before {
+    content: "\f186";
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+.icon2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dbefff;
+    position: absolute;
+    top: 12.5%;
+    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icon2:hover {
+    padding: 1px;
+    transition: all 0.5s;
+}
+
+.icon2::before {
+    content: "\f186";
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+.login-title {
+    color: #323840;
+    margin-top: 40px;
+    margin-bottom: 52px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.login-title-second {
+    color: var(--primary-color);
+}
+
+.cadastro-title {
+    color: #323840;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cadastro-title-second {
+    color: var(--primary-color);
+}
+
+.login-with {
+    color: #808080;
+    margin-top: 35px;
+}
+
+.login-icons i {
+    margin-top: 30px;
+    color: var(--white);
+    background: var(--primary-color);
+    background-size: 200%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.login-icons i:hover {
+    background: var(--second-color);
+}
+
+/*input-label*/
+
+.input-label {
+    color: #808080;
+    position: relative;
+    right: 34.5%;
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.form-input {
+    height: 40px;
+    width: 90%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: solid 1px #868686;
+    border-radius: 12px;
+    outline: none;
+    transition: .1s ease-in-out;
+    font-family: 'Poppins', fontAwesome;
+}
+
+.form-input:hover {
+    border: solid 1px var(--primary-color);
+    transition: .1s ease-in-out
+}
+
+/*buttons*/
+
+#btn-login,
+.btn-cadastro {
+    height: 40px;
+    width: 90%;
+    outline: none;
+    background: var(--primary-color);
+    margin-top: 40px;
+    border-radius: 12px;
+    border: unset;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#btn-login:hover,
+.btn-cadastro:hover {
+    background: var(--second-color);
+    color: #fff;
+    font-size: 17px;
+    transition: .3s ease-in-out;
+}
+
+.register-msg {
+    margin-top: 55px;
+    color: #868686;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register-msg-span {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.register-msg-span:hover {
+    color: var(--second-color);
+    transition: 0.5s;
+}
+
+/*DARK-MODE*/
+
+body.dark {
+    background: #202026;
+}
+
+body.dark .icon::before {
+    content: '\f185';
+    color: var(--white);
+}
+
+body.dark .icon2::before {
+    content: '\f185';
+    color: var(--white);
+}
+
+body.dark .icon {
+    background: #202026;
+}
+
+body.dark .icon2 {
+    background: #202026;
+}
+
+body.dark #login-container {
+    background: #323840;
+}
+
+body.dark #cadastro-container {
+    background: #323840;
+}
+
+body.dark .login-title {
+    color: var(--white);
+}
+
+body.dark .cadastro-title {
+    color: var(--white);
+}

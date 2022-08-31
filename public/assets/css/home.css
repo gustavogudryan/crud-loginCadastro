@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --primary-color: #0088d2;
+    --second-color: #04a1f5;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background: aliceblue;
+    transition: background 0.5s;
+}
+
+.login-title {
+    color: #323840;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.login-title-second {
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.bem-vindo {
+    transition: all 0.5s;
+}
+
+.username {
+    color: #0088d2;
+}
+
+#logout {
+    height: 50px;
+    width: 50px;
+    outline: none;
+    background: var(--primary-color);
+    border-radius: 12px;
+    border: unset;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#logout:hover {
+    background: var(--second-color);
+    color: #fff;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dbefff;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icon:hover {
+    padding: 1px;
+    transition: all 0.5s;
+}
+
+.icon::before {
+    content: "\f186";
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: #50738e;
+    transition: background 0.5s;
+}
+
+#form-container {
+    min-height: 100px;
+    width: 450px;
+    box-sizing: border-box;
+    background: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    transition: background 0.5s;
+}
+
+#novo-recado-form {
+    display: flex;
+
+}
+
+#titulo-recado-input,
+#novo-recado-input {
+    height: 40px;
+    width: 90%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: solid 1px #868686;
+    border-radius: 12px;
+    outline: none;
+    transition: .1s ease-in-out;
+    font-family: 'Poppins', fontAwesome;
+    margin-left: 8px;
+}
+
+#titulo-recado-input:hover,
+#novo-recado-input:hover {
+    border: solid 1px var(--primary-color);
+    transition: .1s ease-in-out
+}
+
+#add {
+    width: 55px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Poppins', fontAwesome;
+    margin-left: 7px;
+    margin-top: 6px;
+    cursor: pointer;
+    background: #0088d2;
+    color: var(--white);
+    border: 1px solid #868686;
+    transition: 0.5s;
+}
+
+#add:hover {
+    background: #04a1f5;
+    color: var(--white);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lista-recados {
+    margin-top: 25px;
+    padding: 1rem;
+    background: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    transition: background 0.5s;
+}
+
+.lista-recados h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #181818;
+    transition: all 0.5s;
+}
+
+#cabecalho-id {
+    margin-right: 100px;
+    margin-left: 70px;
+}
+
+#cabecalho-titulo {
+    float: left;
+    flex: 0 0 auto;
+    width: 19.2%;
+}
+
+#recados .recado {
+    display: flex;
+    justify-content: space-between;
+    background: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5px;
+    transition: background 0.5s;
+}
+
+#recados .recado .conteudo-recado {
+    flex: 1 1 0%;
+}
+
+.conteudo-recado,
+.id-recado,
+.titulo-recado,
+.texto-recado {
+    color: #000000de;
+    font-size: 18px;
+    width: 25%;
+    transition: .3s;
+}
+
+.titulo-recado,
+.texto-recado {
+    border: solid 1px #868686;
+    border-radius: 12px;
+    height: 40px;
+    transition: .1s ease-in-out;
+}
+
+.titulo-recado:hover,
+.texto-recado:hover {
+    border: solid 1px var(--primary-color);
+    border-radius: 12px;
+    transition: .1s ease-in-out;
+}
+
+.id-recado {
+    text-align: center;
+    width: 17%;
+    opacity: 75%;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+
+.id-recado:hover {
+    text-align: center;
+    width: 17%;
+    font-size: 19px;
+    opacity: 100%;
+    border: none;
+    color: #808080;
+    transition: all 0.5s;
+}
+
+.texto-recado {
+    width: 45%;
+}
+
+#recados .recado .conteudo-recado .id-recado,
+.titulo-recado {
+    margin-right: 1rem;
+}
+
+#recados .recado .conteudo-recado .texto-recado:not(:read-only),
+#recados .recado .conteudo-recado .titulo-recado:not(:read-only) {
+    color: #868686;
+}
+
+#recados .recado .botoes-recado {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.recado .botoes-recado button {
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 17px;
+    padding: 8px;
+    transition: .4s;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+}
+
+.recado .botoes-recado .editar-recado {
+    background: #0088d2;
+    color: var(--white);
+    transition: all 0.5s;
+}
+
+.recado .botoes-recado .deletar-recado {
+    background: red;
+    color: var(--white);
+    transition: all 0.5s;
+}
+
+.recado .botoes-recado .editar-recado:hover {
+    background: #04a1f5;
+    transition: all 0.5s;
+}
+
+.recado .botoes-recado .deletar-recado:hover {
+    background: rgb(129, 35, 35);
+    transition: all 0.5s;
+}
+
+/*DARK-MODE*/
+
+body.dark {
+    background: #202026;
+}
+
+body.dark .icon::before {
+    content: '\f185';
+    color: var(--white);
+}
+
+body.dark .icon2::before {
+    content: '\f185';
+    color: var(--white);
+}
+
+body.dark .icon {
+    background: #202026;
+}
+
+body.dark .icon2 {
+    background: #202026;
+}
+
+body.dark header {
+    background: #202026
+}
+
+body.dark .login-title {
+    color: var(--white);
+}
+
+body.dark .bem-vindo {
+    color: var(--white);
+}
+
+body.dark #form-container {
+    background: #323840;
+}
+
+body.dark .lista-recados {
+    background: #323840;
+}
+
+body.dark .lista-recados h2 {
+    color: var(--white);
+}
+
+body.dark #recados .recado {
+    background: #323840;
+}
+
+body.dark .id-recado {
+    background: #323840;
+    color: #fff;
+}

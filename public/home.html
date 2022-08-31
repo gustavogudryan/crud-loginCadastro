@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="shortcut icon" href="assets/images/imgfav.png" type="image/x-icon">
+
+    <!-- link icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <title>GrowDev | Recados</title>
+</head>
+
+<body>
+
+    <div class="main-recados">
+
+        <header>
+
+            <h1 class="login-title">Grow<span class="login-title-second">Dev</span></h1>
+
+            <h3 id="titulo-home"></h3>
+
+            <button id="logout">SAIR</button>
+
+        </header>
+
+        <i class="icon"></i>
+
+        <div id="form-container">
+
+
+            <form id="novo-recado-form">
+
+                <input required type="text" placeholder="Digite o título" id="titulo-recado-input" maxlength="30" />
+
+                <input required type="text" placeholder="Digite a descrição" id="novo-recado-input" maxlength="120" />
+
+                <input id="add" value="+" type="submit" id="novo-recado-submit" />
+
+            </form>
+
+        </div>
+
+        <main>
+
+            <div class="lista-recados">
+                <h2 id="cabecalho-id">#</h2>
+                <h2 id="cabecalho-titulo">Título</h2>
+                <h2 id="cabecalho-descricao">Descrição</h2>
+
+            </div>
+            <br>
+            <div id="recados">
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="assets/js/animationshome.js"></script>
+    <script src="assets/js/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="shortcut icon" href="assets/images/imgfav.png" type="image/x-icon">
+
+    <!-- link icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <title>GrowDev | Login</title>
+</head>
+
+<body>
+
+    <div id="login">
+
+        <div id="login-container">
+
+            <i class="icon"></i>
+
+            <h1 class="login-title">Grow<span class="login-title-second">Dev</span></h1>
+
+            <label for="usuario" class="input-label">E-mail</label>
+            <input type="email" name="usuario" id="usuario" class="form-input" placeholder="&#xf0e0;" required>
+
+            <label for="senha" class="input-label mt">Senha</label>
+            <input type="password" name="senha" id="senha" class="form-input" placeholder="&#xf023;" required>
+
+            <button id="btn-login">LOGIN</button>
+
+            <p class="login-with">Faça login com</p>
+
+            <div class="login-icons">
+                <a href="#"><i class='bx bxl-google bx-sm bx-border-circle'></i></a>
+                <a href="#"><i class='bx bxl-facebook bx-sm bx-border-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter bx-sm bx-border-circle'></i></a>
+            </div>
+
+            <div>
+                <p class="register-msg" id="ir_Cadastro">Ainda não tem conta?<span class="register-msg-span">
+                        Cadastre-se</span></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <form id="form">
+
+        <div id="cadastro">
+
+            <div id="cadastro-container">
+
+                <i class="icon2"></i>
+
+                <h1 class="cadastro-title">Grow<span class="cadastro-title-second">Dev</span></h1>
+
+                <label class="input-label" for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="valorUsuario" class="form-input" placeholder="&#xf007;" required>
+
+                <label class="input-label mt2" for="email">E-mail</label>
+                <input type="email" name="email" id="valorEmail" class="form-input" placeholder="&#xf0e0;" required>
+
+                <label class="input-label mt2" for="senha">Senha</label>
+                <input type="password" name="senha" id="valorSenha" class="form-input" placeholder="&#xf023;" required
+                    minlength="3">
+
+                <label class="input-label mt2 ml" for="senha">Repita a senha</label>
+                <input type="password" name="senha" id="valorSenha2" class="form-input" placeholder="&#xf023;" required
+                    minlength="3">
+
+                <input class="btn-cadastro" type="submit" value="Cadastrar">
+
+                <p id="voltar_Login" class="register-msg">Já possui conta? <span class="register-msg-span"> Efetuar
+                        login</span></p>
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
