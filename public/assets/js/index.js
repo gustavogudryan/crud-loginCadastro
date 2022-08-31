@@ -47,7 +47,7 @@ formularioCadastro.addEventListener('submit', (evento) => {
     let senha2 = document.getElementById('valorSenha2').value;
 
     if (senha != senha2) {
-        alert('Senhas não coincidem');
+        alert('Senhas diferentes!');
         return;
     }
 
